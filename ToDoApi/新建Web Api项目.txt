@@ -1,0 +1,16 @@
+dotnet new webapi --use-controllers -o TodoApi
+cd TodoApi
+dotnet add package Microsoft.EntityFrameworkCore.InMemory
+code -r ../TodoApi
+
+------------------------------------------------------------
+这些命令会：
+创建新的 Web API 项目，并在 Visual Studio Code 中打开它。
+添加下一部分所需的 NuGet 包。
+在 Visual Studio Code 的当前实例中打开 TodoApi 文件夹
+# 项目模板创建了一个支持 Swagger 的 WeatherForecast API
+
+
+运行以下命令，在 https 配置文件上启动应用：
+dotnet run --launch-profile https
+默认浏览器会启动到 https://localhost:<port>/swagger/index.html

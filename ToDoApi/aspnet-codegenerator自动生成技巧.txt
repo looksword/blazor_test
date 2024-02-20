@@ -1,0 +1,83 @@
+添加名为 Models 的文件夹。
+--------------------------------------------------------------添加模型类
+使用以下代码将 TodoItem.cs 文件添加到 Models 文件夹：
+namespace TodoApi.Models;
+
+public class TodoItem
+{
+    public long Id { get; set; }
+    public string? Name { get; set; }
+    public bool IsComplete { get; set; }
+}
+--------------------------------------------------------------添加数据库上下文：为数据模型协调 Entity Framework 功能的主类
+将 TodoContext.cs 文件添加到 Models 文件夹中
+using Microsoft.EntityFrameworkCore;
+
+namespace TodoApi.Models;
+
+public class TodoContext : DbContext
+{
+    public TodoContext(DbContextOptions<TodoContext> options)
+        : base(options)
+    {
+    }
+
+    public DbSet<TodoItem> TodoItems { get; set; } = null!;
+}
+--------------------------------------------------------------注册数据库上下文
+#添加 using 指令。
+#将数据库上下文添加到 DI 容器。
+#指定数据库上下文将使用内存中数据库
+使用以下代码更新 Program.cs
+using Microsoft.EntityFrameworkCore;
+using TodoApi.Models;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllers();
+builder.Services.AddDbContext<TodoContext>(opt =>
+    opt.UseInMemoryDatabase("TodoList"));
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
+--------------------------------------------------------------构建控制器
+#添加构建所需的 NuGet 包。
+#卸载任何可能的早期版本后，安装基架引擎 (dotnet-aspnet-codegenerator)
+将终端在 TodoAPI 项目文件夹中打开。 运行以下命令：
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet tool uninstall -g dotnet-aspnet-codegenerator
+dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet tool update -g dotnet-aspnet-codegenerator
+--------------------------------------------------------------生成项目
+dotnet aspnet-codegenerator controller -name TodoItemsController -async -api -m TodoItem -dc TodoContext -outDir Controllers
+
+
+#上述命令为 TodoItemsController 创建基架
+--------------------------------------------------------------
+生成的代码：
+
+使用 [ApiController] 属性标记类。 此属性指示控制器响应 Web API 请求。
+使用 DI 将数据库上下文 (TodoContext) 注入到控制器中。 数据库上下文将在控制器中的每个 CRUD 方法中使用。
+ASP.NET Core 模板：
+
+具有视图的控制器在路由模板中包含 [action]。
+API 控制器不在路由模板中包含 [action]。
+[action] 令牌不在路由模板中时，终结点中不包含 action 名称（方法名称）。 也就是说，不会在匹配的路由中使用操作的关联方法名称。
