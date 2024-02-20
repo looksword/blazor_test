@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\new_blazor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\new_blazor.bundle.scp.css"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\css\\font\\quicksand.css",
+      "PackagePath": "staticwebassets\\css\\font\\quicksand.css"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\bike.svg",
+      "PackagePath": "staticwebassets\\img\\bike.svg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\icon-512.png",
+      "PackagePath": "staticwebassets\\img\\icon-512.png"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\img\\logo.svg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizza-slice.svg",
+      "PackagePath": "staticwebassets\\img\\pizza-slice.svg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizzas\\bacon.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\bacon.jpg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizzas\\brit.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\brit.jpg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizzas\\cheese.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\cheese.jpg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizzas\\margherita.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\margherita.jpg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizzas\\meaty.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\meaty.jpg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizzas\\mushroom.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\mushroom.jpg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizzas\\pepperoni.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\pepperoni.jpg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\pizzas\\salad.jpg",
+      "PackagePath": "staticwebassets\\img\\pizzas\\salad.jpg"
+    },
+    {
+      "Id": "e:\\looksword\\blazor_test\\new_blazor\\wwwroot\\img\\user.svg",
+      "PackagePath": "staticwebassets\\img\\user.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.new_blazor.props",
+      "PackagePath": "build\\new_blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.new_blazor.props",
+      "PackagePath": "buildMultiTargeting\\new_blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.new_blazor.props",
+      "PackagePath": "buildTransitive\\new_blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.new_blazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
